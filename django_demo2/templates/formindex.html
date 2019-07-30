@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form action="/doc/formOne/" method="post">
+    {% csrf_token %}
+    <input type="text" name="name"  placeholder="填入你的名字">
+<input type="text" password="password" placeholder="填入你的密码">
+<input type="text" sex="男" placeholder="填入你的性别">
+<br>
+<text>基于函数</text>
+    <input type="submit" value="点击上传表单">
+</form>
+
+
+
+<form action="/doc/formTwoView/" method="post">
+    {% csrf_token %}
+    <input type="text" name="name"  placeholder="填入你的名字">
+<input type="text" password="password" placeholder="填入你的密码">
+<input type="text" sex="男" placeholder="填入你的性别">
+<br>
+<text>基于类</text>
+    <input type="submit" value="点击上传表单">
+</form>
+
+
+<form action="/doc/formPyView/" method="post">
+    {% csrf_token %}
+    <input type="text" name="name"  placeholder="填入你的名字">
+    <input type="text" name="password" placeholder="填入你的密码">
+    <input type="text" name="sex" placeholder="填入你的性别">
+    <br>
+    <text>基于django自带的form表单</text>
+    <input type="submit" value="点击上传表单">
+</form>
+</body>
+</html>
